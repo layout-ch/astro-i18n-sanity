@@ -11,10 +11,8 @@ export default defineConfig({
 
   integrations: [
     i18n({
-      defaultLocale: "fr",
-      locales: ["fr", "de", "en"],
-      strategy: 'prefix',
-      sitemap: true,
+      defaultLocale: "en",
+      locales: ["fr", "en"],
     }),
     sanityIntegration({
       projectId: "t9cmnozc",
