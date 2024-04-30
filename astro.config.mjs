@@ -8,10 +8,13 @@ import react from "@astrojs/react";
 export default defineConfig({
   output: "hybrid",
   adapter: vercel(),
+
   integrations: [
     i18n({
-      defaultLocale: "en",
-      locales: ["en", "fr"]
+      defaultLocale: "fr",
+      locales: ["fr", "de", "en"],
+      strategy: 'prefix',
+      sitemap: true,
     }),
     sanityIntegration({
       projectId: "t9cmnozc",
